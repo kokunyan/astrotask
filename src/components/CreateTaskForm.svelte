@@ -1,7 +1,6 @@
 <script>
   import { createTask } from "../stores/taskStore";
   import { formatDateForInput, formatDateForAPI } from "../utils/dateUtils";
-  import LoadingSpinner from "../assets/icons/LoadingSpinner.svg";
 
   let task = $state({
     title: "",
@@ -103,11 +102,6 @@
       >
         {#if isCreating}
           <span class="inline-flex items-center">
-            <img
-              src={LoadingSpinner}
-              class="animate-spin -ml-1 mr-2 h-4 w-4 text-white"
-              alt="Loading"
-            />
             Creating...
           </span>
         {:else}

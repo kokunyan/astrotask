@@ -9,9 +9,6 @@
     formatDateForDisplay,
     formatDateForAPI,
   } from "../utils/dateUtils";
-  import LoadingSpinner from "../assets/icons/LoadingSpinner.svg";
-  import Calendar from "../assets/icons/Calendar.svg";
-  import Lightning from "../assets/icons/Lightning.svg";
 
   let { task } = $props();
   let isEditing = $state(false);
@@ -135,7 +132,6 @@
         >
           {#if isUpdating}
             <span class="inline-flex items-center">
-              <img src={LoadingSpinner} class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" alt="Loading" />
               Saving...
             </span>
           {:else}
@@ -151,11 +147,9 @@
         <p class="text-gray-600 mt-1">{task.description}</p>
         <div class="mt-2 flex items-center space-x-4 text-sm">
           <span class="flex items-center">
-            <img src={Calendar} class="h-4 w-4 mr-1 text-gray-500" alt="Calendar" />
             {formatDateForDisplay(task.dueDate)}
           </span>
           <span class="flex items-center">
-            <img src={Lightning} class="h-4 w-4 mr-1 text-gray-500" alt="Priority" />
             {task.priority}
           </span>
         </div>
