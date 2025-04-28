@@ -1,0 +1,39 @@
+{
+  "name": "astrotask",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,svelte,css,md,json}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,svelte,css,md,json}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,svelte}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx,svelte}\" --fix"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.2.1",
+    "@astrojs/svelte": "^7.0.11",
+    "@prisma/client": "^6.6.0",
+    "@tailwindcss/vite": "^4.1.4",
+    "astro": "^5.7.5",
+    "svelte": "^5.28.2",
+    "tailwindcss": "^4.1.4",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-svelte": "^3.5.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.3.3",
+    "prisma": "^6.6.0",
+    "svelte-preprocess": "^6.0.3",
+    "typescript": "^5.8.3"
+  }
+}

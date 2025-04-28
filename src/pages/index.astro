@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/Layout.astro";
+import CreateTaskForm from "../components/CreateTaskForm.svelte";
+import TaskList from "../components/TaskList.svelte";
+import ErrorModal from "../components/ErrorModal.svelte";
+---
+
+<Layout title="Astrotask*">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="lg:col-span-1">
+      <CreateTaskForm client:only="svelte" />
+    </div>
+    <div class="lg:col-span-2">
+      <TaskList client:only="svelte" />
+    </div>
+  </div>
+  <ErrorModal client:only="svelte" />
+</Layout>
