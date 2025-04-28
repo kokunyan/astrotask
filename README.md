@@ -1,3 +1,13 @@
+# Approach and Challenges
+
+I've had great experience working with Astro since [my homepage](https://github.com/kokunyan/kokunyan-homepage) used previous versions (2.5.5 to be precise). I've got little to no experience using SQLite, but it was quite easy to set up because I used Prisma ORM.
+
+Previous experience from React was good enough to find familiar concepts and use them, so creating components was not a big deal, and I've just focused on them. Unfortunately, I had to deviate from my initial plan of starting with tests first and then moving to functionality. While I had planned to follow a test-driven development approach, concurrent work commitments made it challenging to allocate sufficient time for comprehensive testing. This remains an area for future improvement.
+
+Somehow Astro actions trigger page reload on form submission... I tried a lot of options to fix it, yet victory keeps avoiding me.
+
+UPD. Well, I've just fixed it manually with the addition of Svelte stores.
+
 # Setup
 
 1. **Install Node.js**  
@@ -67,9 +77,3 @@ In the project directory, you can run:
 | 2   | Add tests for actions      | ❌     |
 | 3   | Add tests for ui           | ❌     |
 | 4   | Add description generation | ❌     |
-
-## Struggles
-
-Somehow Astro actions trigger page reload on form submition, I tried a lot of options to fix it, yet victory keeps avoiding me.
-
-UPD. Well, I've just fixed it manually with addition of svelte stores
